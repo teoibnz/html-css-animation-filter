@@ -121,19 +121,35 @@
 
 /* ESERCIZIO N. 10 */
 
-@ex-10-icon{
+@keyframes ex-10-icon{
     0% {
-        
+        transform: rotate(0deg);
+    }
+/* 
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(120deg);
+    }
+
+    75% {
+        transform: rotate(240deg);
+    } */
+
+    100% {
+        transform: rotate(360deg);
     }
 }
 
 .ex-10-icon{
     animation-name: ex-10-icon;
-    /* animation-duration
-    animation-delay: 0; */
+    animation-duration: 3s;
+    animation-delay: 0;
     animation-iteration-count: infinite;
-    /* animation-direction
-    animation-timing-function
-    animation-fill-mode */
+    animation-direction:reverse;
+    animation-timing-function:linear;
+    animation-fill-mode:backwards;
     
 }
