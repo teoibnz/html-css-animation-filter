@@ -125,19 +125,6 @@
     0% {
         transform: rotate(0deg);
     }
-/* 
-    25% {
-        transform: rotate(90deg);
-    }
-
-    50% {
-        transform: rotate(120deg);
-    }
-
-    75% {
-        transform: rotate(240deg);
-    } */
-
     100% {
         transform: rotate(360deg);
     }
@@ -152,4 +139,17 @@
     animation-timing-function:linear;
     animation-fill-mode:backwards;
     
+}
+
+/* ESERCIZIO N. 11 */
+
+.ex-11-icon{
+    transition-property: transform;
+    transition-duration: 3s;
+    transition-timing-function: initial;
+    transition-delay: 0;
+}
+
+.ex-11-icon:hover{
+    transform: rotate(315deg)
 }
